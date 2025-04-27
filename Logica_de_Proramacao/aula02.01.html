@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de Programação JavaScript</title>
+</head>
+<body>
+    <h1>Lógica de programação com JavaScript</h1>
+
+    <script>
+        // alert("Olá Mundo!");
+        var nome = prompt("Qual o seu nome?");
+        alert("Bem-vindo(a), " +nome+"!");
+    </script>
+</body>
+</html>
+
+<!-- 
+
+    Anotações
+
+Introdução à Lógica de Programação com JavaSript
+
+Problema: Perguntar o nome do usuário e mostrar uma mensagem de boas-vindas.
+    Solução:
+    1. Criar uma variável chamada nome.
+    2. Usar a função prompt() para solicitar o nome do usuário e armazená-lo na variável nome.
+    3. Usar a função alert() para exibir uma mensagem de boas-vindas, concatenando o nome do usuário.
+
+    Resumo:
+    - prompt(): Solicita uma entrada do usuário.
+    - alert(): Exibe uma mensagem ao usuário.
+
+    Váriaveis: Espaço reservado na memória da máquina capaz de armazenar um valor.
+
+    Concatenar: No javaScript, o operador + é usado para concatenar strings.
+    
+    Tipos de dados: 
+        Alguns tipos de dados que uma variável pode conter:
+        - String: Texto (ex: "Olá Mundo!")
+        - float: Números decimais (ex: 3.14, 2.5)
+        - int: Números inteiros (ex: 10, 20, 30)
+        - boolean: Verdadeiro ou falso (ex: true, false)
+        - array: Conjunto de valores (ex: [1, 2, 3], ["maçã", "banana"])
+        - object: Estruturas de dados complexas (ex: { nome: "João", idade: 25 })
+        - null: Valor nulo (ex: null)
+        - undefined: Variável não definida (ex: let x; console.log(x); // undefined)
+        - NaN: Not a Number (ex: parseInt("abc")); // NaN
+        - Infinity: Infinito (ex: 1/0); // Infinity
+        - -Infinity: Infinito negativo (ex: -1/0); // -Infinity
+        - Symbol: Tipo de dado único e imutável (ex: Symbol("descricao"))
+        - BigInt: Números inteiros grandes (ex: 1234567890123456789012345678901234567890n)
+        - Date: Data e hora (ex: new Date())
+        - RegExp: Expressões regulares (ex: /[a-z]/)
+        - Map: Estruturas de dados chave-valor (ex: new Map([["chave", "valor"]]))
+        - Set: Conjunto de valores únicos (ex: new Set([1, 2, 3]))
+        - WeakMap: Estruturas de dados chave-valor com referências fracas (ex: new WeakMap())
+        - WeakSet: Conjunto de valores únicos com referências fracas (ex: new WeakSet())
+        - ArrayBuffer: Buffer de dados binários (ex: new ArrayBuffer(8))
+        - TypedArray: Arrays tipados (ex: new Uint8Array(8))
+        - DataView: Visualização de dados em um ArrayBuffer (ex: new DataView(new ArrayBuffer(8)))
+
+    Obs. Os nomes de variáveis não podem ter caracteres especiais e não podem começar com números.
+    Além disso, não podem ser palavras reservadas da linguagem (ex: let, const, var, if, else, etc.).
+-->

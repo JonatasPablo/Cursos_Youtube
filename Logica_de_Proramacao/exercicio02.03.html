@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício aula 02.03</title>
+</head>
+<body>
+    <script>
+        // pedir para o usuário digitar um número
+        var n1 = prompt("Digite um número: ");
+        // Converter em número inteiro
+        n1 = parseInt(n1);
+        // pedir para o usuário digitar outro número
+        var n2 = prompt('Digite o segundo número');
+        // Converter em número inteiro
+        n2 = parseInt(n2);
+
+        var resultado = n1 % n2;
+        // Mostrar num alert o seguinte texto:
+        // O resto da divisão de (n1) por (n2) é: (resultado);
+        alert('O resto da divisão de ' + n1 + ' por ' + n2 + ' é: ' + resultado);
+
+        var resultado = n1 ** n2;
+        // Mostrar num alert o seguinte texto:
+        // O número (n1) elevado a (n2) é: (resultado);
+        alert('O número ' + n1 + ' elevado a ' + n2 + ' é: ' + resultado);
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!-- 
+ENUNCIADO DO EXERCÍCIO:
+Chegou a hora de praticar.
+
+Em alguns pontos deste treinamento vou pedir para você praticar o que vimos te dando algumas tarefas e desafios. Aproveite para se auto-avaliar. Nessa primeira tarefa, você poderá fazer o download do recurso dessa aula e criar o código que está comentado. Abaixo, segue a descrição.
+
+//pedir para o usuario digitar um numero                                    
+//converter em numero inteiro                                    
+//pedir para o usuario digitar outro numero                        
+//converter em numero inteiro                        
+//mostrar a subtração concatenando com o texto "a subtração é: ..."                        
+//mostrar a multiplicação concatenando com o texto "a multiplicação é: ..." 
+//mostrar a divisão concatenando com o texto "a divisão é: ..."                        
+//mostrar a soma concatenando com o texto "a soma é: ..."
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de programação com JavaScript</title>
+</head>
+<body>
+    <h1>Resolvendo exercícios e aprendendo Lógica de Programação</h1>
+
+    <script>
+        var nome = prompt('Olá, sou o navegador, me diz ai como devo te chamar?');
+        alert('Prazer ' + nome + ', para começar antes de mais nada seja bem-vindo(a)');
+
+        alert('Tive uma ideia, vamos fazer uma conta de adição?');
+        var n1  = parseFloat(prompt('Digite o primeiro número que vamos somar: '));
+        var n2 = parseFloat(prompt('Agora digite o outro número: '));
+        var resultado = n1 + n2;
+        alert(nome + ', o resultado dessa soma entre ' + n1 + ' mais ' + n2 + ' é igual a ' + resultado + '.');
+
+        alert('Muito bom, agora vamos fazer uma conta de subtração?');
+        var n1  = parseFloat(prompt('Digite o primeiro número da subtração: '));
+        var n2 = parseFloat(prompt('Agora digite o outro número: '));
+        var resultado = n1 - n2;
+        alert(nome + ', o resultado dessa subtração entre ' + n1 + ' menos ' + n2 + ' é igual a ' + resultado + '.');
+
+        alert('Certo, dessa vez vamos fazer uma conta de multiplicação?');
+        var n1 = parseFloat (prompt('Digite o primeiro número para a multiplicação: '));
+        var n2 = parseFloat(prompt('Agora digite o outro número: ' ));
+        var resultado = n1 * n2;
+        alert(nome + ', o resultado dessa multiplicação entre ' + n1 + ' multiplicado por ' + n2 + ' é igual a ' + resultado + '.');
+
+        alert('E para encerrar vamos fazer uma conta de divisão?');
+        var n1 = parseFloat (prompt('Digite o primeiro número para a divisão: '));
+        var n2 = parseFloat(prompt('Agora digite o outro número: ' ));
+        var resultado = n1 / n2;
+        alert(nome + ', o resultado dessa divisão entre ' + n1 + ' dividido por ' + n2 + ' é igual a ' + resultado + '.');
+
+        alert('Espero que tenha gostado ' + nome + ', até mais!');
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!-- Peça 3 números e mostre o maior entre eles. -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extra</title>
+</head>
+<body>
+    <h1>Exercício extra de lógica de programação com JavaScript</h1>
+    <script>
+        var n1 = parseFloat(prompt('Digite o primeiro número:'));
+        var n2 = parseFloat(prompt('Digite o segundo número:'));
+        var n3 = parseFloat(prompt('Digite o terceiro número:'));
+        if(n1 > n2 && n1 > n3){
+            alert(n1 + ' é o maior número');
+        }else if(n2 > n1 && n2 > n3){
+            alert(n2 + ' é o maior número');
+        }else{
+            alert(n3 + ' é o maior número');
+        }
+    </script>
+</body>
+</html>

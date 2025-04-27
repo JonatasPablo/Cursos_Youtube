@@ -1,0 +1,40 @@
+<!-- Condicional Switch -->
+<!-- Problema:
+Pedir para o usuário digitar um número de 1 a 6 e mostrar na tela uma mensagem diferente para cada número-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicional - SWITCH</title>
+</head>
+<body>
+    <h1>Lógica de programação com JavaScript</h1>
+    <script>
+        var numero = parseFloat(prompt('Digite um número entre 1 e 6: '));
+        switch(numero){
+            case 1:
+                alert('Número 1, boa escolha!');
+                break;
+            case 2:
+                alert('Número 2, legal!');
+                break;
+            case 3:
+                alert('Número 3, top!');
+                break;
+            case 4:
+                alert('Número 4, genial!');
+                break;
+            case 5:
+                alert('Número 5, interessante!');
+                break;
+            case 6:
+                alert('Número 6, no topo!');
+                break;
+            default:
+                alert('Número inválido, precisa ser de 1 a 6...');
+        }
+    </script>
+</body>
+</html>

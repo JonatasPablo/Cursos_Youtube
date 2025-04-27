@@ -1,0 +1,23 @@
+<!-- Peça para o usuário adivinhar uma senha (você define a senha). Enquanto ele não acertar, continue pedindo. -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extra</title>
+</head>
+<body>
+    <h1>Exercício extra de lógica de programação com JavaScript</h1>
+    <script>
+        const senhaCorreta = '1234';
+        var tentativa = '';
+        while(tentativa !== senhaCorreta){
+            tentativa = prompt('Digite a senha: ');
+            if(tentativa !== senhaCorreta){
+                alert('Senha incorreta. Tente novamente.');
+            }
+        }
+        alert('Senha correta! Acesso liberado!');
+    </script>
+</body>
+</html>

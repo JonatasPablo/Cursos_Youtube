@@ -1,0 +1,58 @@
+<!-- Problema:
+Pedir para o usuário digitar um número, mostrar esse número na página.
+Ter botões de + - * e /.
+Ao clicar nesses botões o usuário deve informar outro número para fazer a operação desejada.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+</head>
+<body>
+    <h1>Lógica de programação com JavaScript</h1>
+    <p>Operações:</p>
+    <button onclick="somar()">+</button>
+    <button onclick="subtrair()">-</button>
+    <button onclick="multiplicar()">*</button>
+    <button onclick="dividir()">/</button>
+    <p>Resultado:</p>
+    <div id="resultado"></div>
+
+    <script>
+        var numero = parseFloat(prompt('Digite um número para iniciar: '));
+        escreve();
+        
+        function escreve(){
+            var resultado = document.querySelector('#resultado');
+            resultado.innerHTML = numero;
+        }
+
+        function somar(){
+            somado = parseFloat(prompt('Digite o número para somar: '));
+            numero = (numero + somado) ;
+            escreve();
+        }
+
+        function subtrair(){
+            subtraido = parseFloat(prompt('Digite o número para subtrair: '));
+            numero = (numero - subtraido);
+            escreve();
+        }
+
+        function multiplicar(){
+            multiplicado = parseFloat(prompt('Digite o número para multiplicar: '));
+            numero = (numero * multiplicado);
+            escreve();
+        }
+
+        function dividir(){
+            dividido = parseFloat(prompt('Digite o número para dividir: '));
+            numero = (numero / dividido);
+            escreve();
+        }
+    </script>
+</body>
+</html>

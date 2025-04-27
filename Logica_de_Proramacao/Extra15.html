@@ -1,0 +1,20 @@
+<!-- Peça um número e mostre a tabuada do 1 ao 10. -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extra</title>
+</head>
+<body>
+    <h1>Exercício extra de lógica de programação com JavaScript</h1>
+    <script>
+        var n1 = parseFloat(prompt('Digite um número:'));
+        var tabuada = '';
+        for(i = 0; i <= 10; i++){
+            tabuada += `${n1} x ${i} = ${n1 * i}\n`
+        }
+        alert(tabuada);
+    </script>
+</body>
+</html>

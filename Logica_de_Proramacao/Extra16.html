@@ -1,0 +1,22 @@
+<!-- Peça ao usuário 5 números e mostre qual foi o maior número digitado. -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extra</title>
+</head>
+<body>
+    <h1>Exercício extra de lógica de programação com JavaScript</h1>
+    <script>
+        var maiorValor = null;
+        for(i = 1; i <= 5; i++){
+            var numeroAtual = parseFloat(prompt(`Digite o ${i}º número:`));
+            if(i === 1 || numeroAtual > maiorValor){
+                maiorValor = numeroAtual;
+            }
+        }
+        alert(`O maior valor digitado foi ${maiorValor}.`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!-- Monte um contador que conte de 1 a 10 e ao chegar no 5 escreva: "Cheguei na metade!" -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extra</title>
+</head>
+<body>
+    <h1>Exercício extra de lógica de programação com JavaScript</h1>
+    <script>
+        var contagemFinal = '';
+        for(i = 1; i <= 10; i++){
+            if (i === 5){
+                contagemFinal += i + ' Cheguei na metade! \n';
+            }else{
+                contagemFinal += i + '\n';
+            }
+        }
+        alert(`Contagem de 1 a 10: \n ${contagemFinal}`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+{
+  "_comments": {
+    "name": "Nome do projeto.",
+    "version": "Versão do projeto.",
+    "main": "Arquivo principal do projeto.",
+    "type": "Tipo de módulo do projeto.",
+    "scripts": "Comandos npm que podem ser executados.",
+    "dependencies": "Bibliotecas essenciais para rodar o projeto.",
+    "devDependencies": "Bibliotecas necessárias apenas para desenvolvimento.",
+    "test": "Comando de teste padrão que exibe uma mensagem de erro.",
+    "keywords": "Palavras-chave do projeto, atualmente vazio.",
+    "author": "Nome do autor do projeto, atualmente vazio.",
+    "license": "Tipo de licença do projeto.",
+    "description": "Descrição do projeto, atualmente vazia."
+  },
+  "name": "prisma_io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "express": "^4.21.2",
+    "prisma": "^6.3.1"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.3.1"
+  }
+}

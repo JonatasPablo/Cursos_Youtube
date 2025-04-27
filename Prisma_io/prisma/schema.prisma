@@ -1,0 +1,23 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js" // Define o provedor do gerador como `prisma-client-js`, que cria o cliente Prisma para interagir com o banco de dados usando JavaScript ou TypeScript.
+}
+
+datasource db {
+  provider = "mysql" // Define o provedor do banco de dados como MySQL. Isso indica que o Prisma irá gerar consultas e interagir com um banco MySQL.
+  url      = env("DATABASE_URL") // Define a URL de conexão com o banco de dados. O valor é obtido a partir da variável de ambiente `DATABASE_URL`, permitindo que as credenciais fiquem seguras e flexíveis para diferentes ambientes (desenvolvimento, teste, produção).
+}
+
+model usuarios {
+  id Int @id @default(autoincrement()) // Define o campo `id` como chave primária e faz com que seja autoincrementado automaticamente pelo banco de dados.
+  nome_usuario String // Campo para armazenar o nome de usuário, do tipo `String`.
+  email String @unique // Campo para armazenar o email do usuário, do tipo `String`, garantindo que cada email seja único no banco de dados.
+  senha String // Campo para armazenar a senha do usuário, do tipo `String`. Normalmente, essa senha deve ser armazenada de forma hash para segurança.
+  criado_em DateTime @default(now()) // Campo que armazena a data e hora de criação do registro, com um valor padrão definido como a data e hora atuais.
+}
+

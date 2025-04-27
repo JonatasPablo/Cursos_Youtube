@@ -1,0 +1,25 @@
+<!-- Condicionais -->
+<!-- Problema:
+Pedir para o usuário digitar dois números e mostrar uma mensagem informando se foi aprovado ou não. A nota de corte é 5 -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionais</title>
+</head>
+<body>
+    <h1>Lógica de programação com JavaScript</h1>
+    <script>
+        n1 = parseFloat(prompt('Digite o primeiro número: '));
+        n2 = parseFloat(prompt('Digite o segundo número: '));
+        media = (n1 + n2) / 2;
+        if(media > 5){
+            alert('Parabéns você passou.');
+        }else{
+            alert('Sinto muito, mas não foi dessa vez.');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!-- Peça a idade do usuário e diga se ele pode ou não tirar carteira de motorista (idade mínima: 18 anos). -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extra</title>
+</head>
+<body>
+    <h1>Exercício extra de lógica de programação com JavaScript</h1>
+    <script>
+        var n1 = parseFloat(prompt('Digite sua idade: '));
+        if(n1 > 18){
+            alert('É maior de 18 anos, pode tirar carteira de motorista');
+        }else if(n1 === 18){
+            alert('Tem 18 anos, já pode tirar a carteira de motorista');
+        }else {
+            alert('É menor de 18 anos, não pode tirar a carteira de motorista');
+        }
+    </script>
+</body>
+</html>

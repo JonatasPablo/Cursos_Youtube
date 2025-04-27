@@ -1,0 +1,50 @@
+<!-- Exercício:
+- Fazer o jogador1 digitar um número.
+- Fazer o jogagor2 digitar um número.
+    se forem iguais, mostrar a mensagem 'Empate'.
+- Sortear um número entre 0 e 1.
+    se o número sorteado for 0, ganha quem escolher o número menor.
+    se o número sorteado for 1, ganha quem escolher o número maior.-->
+
+    <!-- Reescreva usando as condicionais 'ou' e 'e' -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+</head>
+<body>
+    <h1>Exercício de fixação.</h1>
+    <script>
+        // Fazer o jogador1 digitar um número.
+        jogador1 = parseFloat(prompt('Jogador 1, digite um número: '));
+        // Fazer o jogador2 digitar um número.
+        jogador2 = parseFloat(prompt('Jogador 2, digite um número: '));
+        // Se forem iguais, mostrar a mensagem 'Empate'
+        if(jogador1 == jogador2){
+            alert('Empate');
+        } else {
+            // Sortear um número entre 0 e 1
+            sorteado = Math.floor(Math.random() * 2);
+            // Se o número sorteado for 0, ganha quem escolher o número menor.
+            console.log(sorteado);
+            if(sorteado == 0){
+                if(jogador1 < jogador2){
+                    alert('Ganhou o jogador 1');
+                }else{
+                    alert('Ganhou o jogador 2');
+                }
+            // se o número sorteado for 1, ganha quem escolher o número maior.
+            } else{
+                if(jogador1 > jogador2){
+                    alert('Ganhou o jogador 1');
+                }else{
+                    alert('Ganhou o jogador 2');
+                }
+            }
+        }
+    </script>
+</body>
+</html>

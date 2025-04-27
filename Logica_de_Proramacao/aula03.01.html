@@ -1,0 +1,40 @@
+<!-- Repetições -->
+<!-- Problema:
+Pedir para o usuário digitar um número e mostrar a tabuada desse número de 1 a 1000.-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repetições - WHILE</title>
+</head>
+<body>
+    <h1>Lógica de programação com JavaScript</h1>
+    <script>
+        var numero = parseFloat(prompt('Digite um número: '));
+
+        // Laço usando While
+        var index = 0;
+        // while(index <= 1000){
+        //     document.write(numero + ' x ' + index + ' = ' + numero * index + '<br>');
+        //     index = index + 1;
+        // }
+        // document.write('Saiu do Loop');
+
+        // Laço usando For
+        // for(i = 1; i <= 1000; i++){
+        //     document.write(numero + ' x ' + i + ' = ' + numero * i + '<br>');
+        // }
+        // document.write('Saiu do Loop');
+
+        // Laço usando Do While
+        do{
+            document.write(numero + ' x ' + index + ' = ' + numero * index + '<br>');
+            index++;
+        }while(index <= 1000);
+        document.write('Saiu do Loop');
+
+    </script>
+</body>
+</html>

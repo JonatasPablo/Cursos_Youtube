@@ -1,0 +1,47 @@
+<!-- Praticando -->
+<!-- Problema
+Perguntar para o usuaário um número e escrever a tabuada dele de 1 a 1000, separando a cada 10 com uma linha -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repetições</title>
+</head>
+<body>
+    <h1>Lógica de programação com JavaScript</h1>
+    <script>
+        var numero = parseFloat(prompt('Digite um número: '));
+        var index = 0;
+        // while(index <= 1000){
+        //     document.write(numero + ' x ' + index + ' = ' + numero * index + '<br>');
+        //     if(index % 10 === 0 && index > 0){
+        //         document.write('<hr>');
+        //     }
+        //     index = index + 1;
+        // }
+
+        // Laço For
+        // for(i = 0; i <= 1000; i++){
+        //     document.write(numero + ' x ' + i + ' = ' + numero * i + '<br>');
+        //     if(i % 10 === 0 && i > 0){
+        //         document.write('<hr>');
+        //     }
+        // }
+
+        // Laço Do While
+        do{
+            document.write(numero + ' x ' + index + ' = ' + numero * index + '<br>');
+            if(index % 10 === 0 && index > 0){
+                document.write('<hr>');
+            }
+            index++;
+
+        }while(index <= 1000);
+
+        document.write('Saiu do Loop');
+
+    </script>
+</body>
+</html>

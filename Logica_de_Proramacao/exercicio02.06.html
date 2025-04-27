@@ -1,0 +1,31 @@
+<!-- Operadores Lógicos -->
+<!-- Problema
+Pedir para o usuário digitar dois números e mostrar uma mensagem informando se foi aprovado ou não. 
+A nota de corte é 5.
+Contudo, se qualquer uma das notas for zero, reprova automaticamente.-->
+
+<!-- Reescrever com a condicional Ou '||' -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Lógicos</title>
+</head>
+<body>
+    <h1>Lógica de programação com JavaScript</h1>
+    <script>
+        nota1 = parseFloat(prompt('Digite a primeira nota: '));
+        nota2 = parseFloat(prompt('Digite a segunda nota: '));
+        media = (nota1 + nota2) / 2;
+
+        if(nota1 === 0 || nota2 === 0 || media <= 5){
+            alert('Sinto muito, mas você foi reprovado.')
+        }else{
+            alert('Parabéns você foi aprovado!')
+        }
+
+    </script>
+</body>
+</html>/
