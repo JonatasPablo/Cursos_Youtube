@@ -1,0 +1,63 @@
+<!-- Exercício 
+Refatorar código que calcula valores ajustando as funções.-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício - Refatoração</title>
+</head>
+<body>
+    <h1>Lógica de programação com JavaScript</h1>
+    <p>Operações:</p>
+    <button onclick="iniciarCalculo('+')">+</button>
+    <button onclick="iniciarCalculo('-')">-</button>
+    <button onclick="iniciarCalculo('*')">*</button>
+    <button onclick="iniciarCalculo('/')">/</button>
+    <p>Resultado:</p>
+    <div id="resultado"></div>
+    <script>
+        var numero = parseFloat(prompt('Digite um número para iniciar: '));
+        escreve(numero); // Exibe o número inicial
+
+        function iniciarCalculo(x){
+            var n1 = numero; // Mantém o número inicial
+            var n2 = parseFloat(prompt('Digite outro número'));
+            var msg = calcular(x, n1, n2);
+            escreve(msg);
+            numero = msg; // Atualiza o número com o resultado do cálculo
+        }
+
+        function escreve(mensagem){
+            var resultado = document.querySelector('#resultado');
+            resultado.innerHTML = mensagem;
+        }
+
+        function calcular(x, n1, n2){
+            var numeroCalculado = null;
+            switch(x){
+                case '+':
+                    numeroCalculado = n1 + n2;
+                    break;
+                case '-':
+                    numeroCalculado = n1 - n2;
+                    break;
+                case '*':
+                    numeroCalculado = n1 * n2;
+                    break;
+                case '/':
+                    if (n2 === 0) {
+                        numeroCalculado = 'Erro: Divisão por zero'; // Verifica divisão por zero
+                    } else {
+                        numeroCalculado = n1 / n2;
+                    }
+                    break;
+                default:
+                    numeroCalculado = 'Operação inválida';
+            }
+            return numeroCalculado;
+        }
+    </script>
+</body>
+</html>

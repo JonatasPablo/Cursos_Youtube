@@ -1,0 +1,48 @@
+<!-- Exercício 
+Refatorar código que calcula valores para que ao invés de usar quatro
+funções, usar apenas uma.-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício - Refatoração</title>
+</head>
+<body>
+    <h1>Lógica de programação com JavaScript</h1>
+    <p>Operações:</p>
+    <button onclick="calcular('+')">+</button>
+    <button onclick="calcular('-')">-</button>
+    <button onclick="calcular('*')">*</button>
+    <button onclick="calcular('/')">/</button>
+    <p>Resultado:</p>
+    <div id="resultado"></div>
+    <script>
+        var numero = parseFloat(prompt('Digite um número para iniciar: '));
+        escreve();        
+        function escreve(){
+            var resultado = document.querySelector('#resultado');
+            resultado.innerHTML = numero;
+        }
+        function calcular(x){
+            valor = parseFloat(prompt('Digite outro valor: '));
+            switch(x){
+                case '+':
+                    numero = (numero + valor) ;
+                    break;
+                case '-':
+                    numero = (numero - valor) ;
+                    break;
+                case '*':
+                    numero = (numero * valor) ;
+                    break;
+                case '/':
+                    numero = (numero / valor) ;
+                    break;
+                
+            }
+            escreve();
+        }
+    </script>
+</body>
+</html>

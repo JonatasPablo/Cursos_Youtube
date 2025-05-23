@@ -1,0 +1,37 @@
+<!-- Funções que retornam valores -->
+<!-- Problema 
+Pedir para o usuário digitar dois números que representam os lados de um retângulo.
+Mostrar na tela a área total de duas formas distintas:
+Num alert ou na div #output (dependendo do botão clicado).
+Esse código não precisa ser executado quando a página é aberta.-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções com Parâmetros | 2</title>
+</head>
+<body>
+    <h1>Lógica de programação com JavaScript</h1>
+    <button onclick="mostrarAreaAlert()">Mostrar no Alert</button>
+    <button onclick="mostrarAreaOutput()">Mostrar no Output</button>
+    <div id="output"></div>
+    <script>
+        function mostrarAreaAlert(){
+            var largura = parseFloat(prompt('Digite o primeiro valor: '));
+            var altura = parseFloat(prompt('Digite o segundo valor: '));
+            var area = calcularArea(largura, altura);
+            alert(`A área calculada é: ${area}.`);
+        }
+        function mostrarAreaOutput(){
+            var largura = parseFloat(prompt('Digite o primeiro valor: '));
+            var altura = parseFloat(prompt('Digite o segundo valor: '));
+            var area = calcularArea(largura, altura);
+            document.querySelector('#output').innerHTML = `A area calculada é ${area}.`;
+        }
+        function calcularArea(altura,largura){
+            return largura * altura
+        }
+    </script>
+</body>
+</html> 

@@ -1,0 +1,25 @@
+<!-- Funções que recebem Parâmetros -->
+<!-- Problema: 
+Pedir para o usuário digitar dois números que representam os lados de um retângulo 
+assim que a página é carregada. Mostrar na tela a área total quando clicar num botão.-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções com Parâmetros</title>
+</head>
+<body>
+    <h1>Lógica de programação com JavaScript</h1>
+    <p>Clique abaixo para saber a área do retângulo, mediante aos valores que você informou.</p>
+    <button onclick="mostrarArea(largura,altura)">Clique aqui</button>
+    <script>
+        var largura = parseFloat(prompt('Digite o primeiro valor: '));
+        var altura = parseFloat(prompt('Digite o segundo valor: '));
+        function mostrarArea(largura, altura){
+            var area = largura * altura;
+            alert(`A área calculada é: ${area}`);
+        }
+    </script>
+</body>
+</html>

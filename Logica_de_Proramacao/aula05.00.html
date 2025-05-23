@@ -1,0 +1,60 @@
+<!-- Exceções - Logs de erros / Try, Catch, Throw new Error() -->
+<!-- Problema
+    Pedir para o usuário digitar dois números que representam os lados de um retângulo.
+    Mostrar na tela a área total.
+    Esse código deve ser executado quando a página é aberta e também quando clicar num botão.
+    O que acontece quando o usuário inserir um dado inválido?-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções com Parâmetros | 2</title>
+</head>
+<body>
+    <h1>Lógica de programação com JavaScript</h1>
+    <button onclick="mostrarAreaOutput()">Mostrar Resultado</button>
+    <div id="output"></div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            try{
+                const largura = parseFloat(prompt('Digite a largura do retângulo:'));
+                const altura = parseFloat(prompt('Digite a altura do retângulo:'));
+                if(isNaN(largura) || isNaN(altura)){
+                    throw new Error('Por favor, digite valores numéricos válidos.');
+                }
+                if(largura <= 0 || altura <= 0){
+                    throw new Error('Os valores devem ser maiores que zero.');
+                }
+                const area = calcularArea(largura, altura);
+                document.querySelector('#output').innerHTML = `A área calculada é ${area}.`;
+            }catch(error){
+                document.querySelector('#output').innerHTML = `Erro: ${error.message}`;
+                console.error('Erro:', error);
+            }
+        });
+
+        function mostrarAreaOutput(){
+            try{
+                const largura = parseFloat(prompt('Digite a largura do retângulo:'));
+                const altura = parseFloat(prompt('Digite a altura do retângulo:'));
+                if(isNaN(largura) || isNaN(altura)){
+                    throw new Error('Por favor, digite valores numéricos válidos.');
+                }
+                if(largura <= 0 || altura <= 0){
+                    throw new Error('Os valores devem ser maiores que zero.');
+                }
+                const area = calcularArea(largura, altura);
+                document.querySelector('#output').innerHTML = `A area calculada é ${area}.`;
+            }catch(error){
+                document.querySelector('#output').innerHTML = `Erro: ${error.message}`;
+                console.error('Erro:', error);
+            }           
+            
+        }
+        function calcularArea(altura,largura){
+            return largura * altura
+        }
+    </script>
+</body>
+</html> 
